@@ -9,7 +9,7 @@ st.header("Brain Tumor MRI Classifier")
 st.text("Upload a brain MRI Image for image classification as tumor or Healthy Brain")
 # Add a color scheme
 st.markdown('<style>body {background-color: #f0f0f0;}</style>', unsafe_allow_html=True)
-st.footer("Copyright © 2024. All rights reserved. <BUKC> Developed by Dawood and Osama.</BUKC>")
+
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg","png","jpeg"])
 if uploaded_file is not None:
