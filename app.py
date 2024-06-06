@@ -1,5 +1,5 @@
 import streamlit as st
-from PIL import Image 
+from PIL import Image
 from prediction import mri_classification
 import os
 
@@ -9,7 +9,7 @@ st.header("Brain Tumor MRI Classifier")
 st.text("Upload a brain MRI Image for image classification as tumor or Healthy Brain")
 
 # File uploader
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg","png","jpeg"])
+uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 
 # Credits
 st.markdown("""###### Credits:
@@ -17,18 +17,6 @@ st.markdown("""###### Credits:
 - Dawood Shahzad
 - KongKhan
 """)
-
-# Default background color
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #f0f0f0;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # If a file is uploaded
 if uploaded_file is not None:
@@ -47,7 +35,7 @@ if uploaded_file is not None:
         st.markdown(
             """
             <style>
-            body {
+            .reportview-container {
                 background-color: #d4edda;
             }
             </style>
@@ -59,7 +47,7 @@ if uploaded_file is not None:
         st.markdown(
             """
             <style>
-            body {
+            .reportview-container {
                 background-color: #f8d7da;
             }
             </style>
