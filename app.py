@@ -3,19 +3,6 @@ from PIL import Image
 from prediction import mri_classification
 import os
 
-# Function to set background color using st.markdown
-def set_background_color(color: str):
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-color: {color};
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
 # Title and header
 st.title("Brain Tumor or Healthy Brain")
 st.header("Brain Tumor MRI Classifier")
@@ -45,8 +32,26 @@ if uploaded_file is not None:
     
     # Dynamically change background color based on the result
     if label == 0:
-        set_background_color("#d4edda")  # Green for a healthy brain
+        st.markdown(
+            """
+            <style>
+            .reportview-container {
+                background-color: #d4edda;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
         st.write('<p style="color:green;">The MRI scan shows a healthy brain</p>', unsafe_allow_html=True)
     else:
-        set_background_color("#f8d7da")  # Red for a brain tumor
+        st.markdown(
+            """
+            <style>
+            .reportview-container {
+                background-color: #f8d7da;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
         st.write('<p style="color:red;">The MRI scan detects a brain tumor</p>', unsafe_allow_html=True)
