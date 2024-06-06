@@ -1,0 +1,6 @@
+[theme]
+primaryColor="#6c757d"
+backgroundColor="#d4edda"  # This color will be green for a healthy brain
+secondaryBackgroundColor="#f8d7da"  # This color will be red for a brain tumor
+textColor="#000000"
+font = "sans serif"
