@@ -29,9 +29,9 @@ if uploaded_file is not None:
         st.write('<p style="color:red;">The MRI scan detects a brain tumor</p>', unsafe_allow_html=True)
     st.markdown("""
     ###### Credits:
+    - Osama Raheem
     - Dawood Shahzad
-    - Fasih Ahmed
-    - Ali Hamza Sultan
+    - KongKhan
 """)
 
         
