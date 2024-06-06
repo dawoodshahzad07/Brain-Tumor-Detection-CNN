@@ -12,12 +12,10 @@ st.markdown('<style>body {background-color: #f0f0f0;}</style>', unsafe_allow_htm
 
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg","png","jpeg"])
-    st.markdown("""
-    ###### Credits:
+st.markdown("""    ###### Credits:
     - Osama Raheem
     - Dawood Shahzad
-    - KongKhan
-""")
+    - KongKhan""")
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
     st.image(image, caption='Uploaded Image.', use_column_width=True)
