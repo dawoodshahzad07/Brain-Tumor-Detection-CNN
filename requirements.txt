@@ -4,4 +4,3 @@ numpy
 keras
 tensorflow
 opencv-python-headless
-os
