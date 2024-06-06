@@ -1,7 +1,0 @@
-[theme]
-primaryColor="#6c757d"
-backgroundColor="#d4edda"  # default background color (green for healthy brain)
-secondaryBackgroundColor="#f8d7da"  # red for brain tumor
-textColor="#000000"
-font = "sans serif"
-
